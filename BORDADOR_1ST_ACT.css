@@ -1,224 +1,88 @@
-body {
-    font-family: 'Merriweather', serif;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.container {
+  padding: 0 15px;
+  min-height: 100vh;
+  justify-content: center;
+  background: #f0f2f5;
+}
+.img{
+text-align:center
+ }
+.snow-page {
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+.snow-page .text {
+  margin-bottom: 90px;
+}
+.snow-page h1 {
+  color: #1877f2;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.snow-page p {
+  font-size: 1.75rem;
+  white-space: nowrap;
+}
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f4f4f4;
-}
-
-.bangers-regular {
-    font-family: 'Bangers', cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.resume {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 900px;
-    height: auto;
-    box-sizing: border-box;
-    margin: 30px auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-.profile-picture {
-    display: block;
-    margin: 0 auto 10px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-h1, h2 {
-    padding: 10px;
-    background-color: #ecebeb; 
-    border-radius: 12px; 
-    border: 2px solid #e6e5e5; 
-    color: #000000;
-    margin-bottom: 1.5px;
-    font-size: 1.4rem;
-    display: inline-block;
-}
-
-h1:hover, h2:hover {
-    background-color: #f3f2f2; 
-}
-
-.header-name {
-    font-family: 'Merriweather', serif;
-    font-size: 2rem; 
-    font-weight: 800;   
-    color: #000000;       
-}
-
-header h2 {
-    color: #000000;
-    font-size: 1.8rem;
-    margin: 0;
-    text-align: center;
-}
-
-header p {
-    margin: 5px 0;
-    text-align: center;
-}
-
-hr {
-    border: none;
-    border-top: 2px solid #cecccc;
-    margin: 5px 0;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.academic-background {
-    list-style: none;
-    padding: 0;
-    text-align: center; 
-}
-
-.academic-background li {
-    margin-bottom: 15px;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.academic-background strong {
-    color: #1e1d1d;
-    font-size: 1.1rem;
-}
-
-.skills-container {
-    margin-top: 20px;
-    text-align: center;
-}
-.skills-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.column {
-    flex: 1;
-    text-align: left;
-}
-
-.skill {
-    margin-bottom: 15px;
-}
-
-.skill p {
-    font-size: 1rem;
-    margin: 0 0 5px;
-    color: #000000;
-}
-.skills-container h2 {
-    margin-bottom: 15px; 
-}
-
-.progress-bar {
-    background: #e0e0e0;
-    border-radius: 20px;
-    height: 10px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.progress {
-    background: #302f2f;
-    height: 100%;
-    border-radius: 20px;
-    transition: width 0.4s ease-in-out;
-}
-
-.button-container {
-    margin-top: 20px; 
-    text-align: center;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
+    background: #fff;
     border-radius: 8px;
-    background-color: #007BFF;
-    color: #fff;
+    padding: 20px;
+}
+form input {
+    height: 55px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
     font-size: 1rem;
+    padding: 0 14px;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+.link .login {
+    border: none;
+    outline: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 20px; 
-}
-
-button:hover {
-    background-color: #2a7ed7;
-}
-.two-column {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    background: #1877f2;
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+  }
+  .link .login:hover {
+    background: #0d65d9;
+  }
+.button {
+    margin-top: 25px;
     text-align: center;
+    margin-bottom: 20px;
 }
-
-.column {
-    flex: 1;
-    min-width: 250px;
-    max-width: 48%;
-}
-
-.two-column {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.column {
-    flex: 1;
-    min-width: 250px;
-    max-width: 48%;
-}
-
-.column p {
-    text-align: justify;
-}
-
-@media (max-width: 768px) {
-    .two-column {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .column {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .resume {
-        width: 95%;
-        padding: 15px;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .skill p {
-        font-size: 0.9rem;
-    }
+.button a {
+  padding: 15px 20px;
+  background: #42b72a;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.063rem;
+  font-weight: 600;
+  transition: 0.2s ease;
 }
