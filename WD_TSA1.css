@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,16 +10,22 @@ body {
     background-color: #f4f4f4;
 }
 
+.bangers-regular {
+    font-family: 'Bangers', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .resume {
     background-color: #fff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
     width: 80%;
     max-width: 900px;
     height: auto;
     box-sizing: border-box;
-    margin: 20px auto;
+    margin: 30px auto;
     overflow: hidden;
     text-align: center;
 }
@@ -27,13 +33,35 @@ body {
 .profile-picture {
     display: block;
     margin: 0 auto 10px;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-header h1 {
+h1, h2 {
+    padding: 10px;
+    background-color: #ecebeb; 
+    border-radius: 12px; 
+    border: 2px solid #e6e5e5; 
+    color: #000000;
+    margin-bottom: 1.5px;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+
+h1:hover, h2:hover {
+    background-color: #f3f2f2; 
+}
+
+.header-name {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem; 
+    font-weight: 800;   
+    color: #000000;       
+}
+
+header h2 {
     color: #000000;
     font-size: 1.8rem;
     margin: 0;
@@ -47,9 +75,9 @@ header p {
 
 hr {
     border: none;
-    border-top: 2px solid #e0e0e0;
-    margin: 20px 0;
-    width: 80%;
+    border-top: 2px solid #cecccc;
+    margin: 5px 0;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -67,13 +95,23 @@ hr {
 }
 
 .academic-background strong {
-    color: #000000;
+    color: #1e1d1d;
     font-size: 1.1rem;
 }
 
 .skills-container {
     margin-top: 20px;
     text-align: center;
+}
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    text-align: left;
 }
 
 .skill {
@@ -84,7 +122,9 @@ hr {
     font-size: 1rem;
     margin: 0 0 5px;
     color: #000000;
-    text-align: left;
+}
+.skills-container h2 {
+    margin-bottom: 15px; 
 }
 
 .progress-bar {
@@ -123,6 +163,49 @@ button {
 
 button:hover {
     background-color: #2a7ed7;
+}
+.two-column {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 48%;
+}
+
+.two-column {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 48%;
+}
+
+.column p {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .two-column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 768px) {
