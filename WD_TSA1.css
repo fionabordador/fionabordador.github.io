@@ -37,6 +37,12 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 0 15px rgba(157, 2, 2, 0.949); /* Blue glow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for glow effect */
+}
+
+.profile-picture:hover {
+    box-shadow: 0 0 25px rgb(234, 23, 23); /* Intensified glow on hover */
 }
 
 h1, h2 {
