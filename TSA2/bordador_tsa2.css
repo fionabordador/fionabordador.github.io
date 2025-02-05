@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .day-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .day-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #3498db;
+    position: relative;
+    display: none;
+    transition: all 1s ease-in-out;
+  }
+  
+  .show-box {
+    display: block;
+    animation: moveDown 2s forwards, changeColor 2s 1s forwards;
+  }
+  
+  @keyframes moveDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(150px);
+    }
+  }
+  
+  @keyframes changeColor {
+    0% {
+      background-color: #3498db;
+    }
+    100% {
+      background-color: #e74c3c;
+    }
+  }
+  
